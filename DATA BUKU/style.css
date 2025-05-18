@@ -1,0 +1,113 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0; /* Pink muda sebagai latar belakang */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+    color: #d63384; /* Pink gelap untuk teks heading */
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+/* Links */
+a {
+    color: #d63384; /* Warna pink gelap untuk tautan */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f66da2; /* Warna hover lebih terang */
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Warna putih untuk tabel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #d63384; /* Warna pink gelap untuk border */
+    font-size: 14px;
+}
+
+table th {
+    background-color: #d63384; /* Pink gelap untuk header tabel */
+    color: #ffffff; /* Warna putih untuk teks header */
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffe6f0; /* Baris genap warna pink muda */
+}
+
+table tr:hover {
+    background-color: #f8c8dc; /* Highlight baris saat dihover */
+    cursor: pointer;
+}
+
+table td {
+    color: #333; /* Warna teks konten tabel */
+}
+
+/* Buttons */
+button {
+    background-color: #d63384; /* Pink gelap */
+    color: #ffffff; /* Warna teks putih */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f66da2; /* Pink terang saat hover */
+    transform: translateY(-2px); /* Sedikit naik saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper Styling */
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
